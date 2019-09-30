@@ -7,3 +7,6 @@ name_hash.collect do |key, value|
   end
 end
 
+birthday_kids.collect do |name, age|
+    age * 7
+end
