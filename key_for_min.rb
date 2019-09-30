@@ -8,5 +8,10 @@ name_hash.collect do |key, value|
 end
 
 birthday_kids.collect do |name, age|
-    
+    if lowest_value == 0 || value < lowest_value
+      lowest_value = value
+      lowest_key = key
+    end
+end
+lowest_key
 end
